@@ -17,6 +17,12 @@ body {
     height: auto;
 }
 
+.line {
+    width: 100%;
+    height: 20px;
+    background-color: white;
+}
+
 #content {
     background-color: rgba(71, 44, 171, 0.945);
     width: 100%;
