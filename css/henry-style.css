@@ -1,13 +1,24 @@
+
+* {
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
 body {
     background-image: url("../img/background-top-2.png");
 }
 
-#filter {
+#header {
     background-color: rgba(184, 211, 84, 0.945);
     width: 100%;
+    height: auto;
+}
+
+#content {
+    background-color: rgba(71, 44, 171, 0.945);
+    width: 100%;
     height: 100%;
-    position: fixed;
-    z-index: -1;
-    left: 0;
-    top: 0;
 }
