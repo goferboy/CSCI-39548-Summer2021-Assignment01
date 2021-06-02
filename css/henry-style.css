@@ -10,6 +10,7 @@ html, body {
 body {
     background-image: url("../img/background-top-2.png");
     font-family: 'Sen', sans-serif;
+    text-shadow: 1px 1px black;
 }
 
 #header {
@@ -32,7 +33,6 @@ body {
     margin: 5px;
     padding-bottom: 10px;
     color:rgb(102, 80, 184);
-    text-shadow: 1px 1px black;
 }
 
 .line {
@@ -54,12 +54,38 @@ body {
     height: auto;
     color: white;
     font-size: 28px;
+    display: flex;
+    justify-content: center;
+}
+
+#favs {
+    margin: 15px;
+    list-style-image: url("../img/banana.gif");
+}
+
+span {
+    color: rgb(121, 214, 15);
 }
 
 #footer {
+    margin-top: 30px;
     width: 100%;
     height: auto;
     text-align: center;
+}
+
+#index-link {
+    font-size: 20px;
+    color: white;
+}
+
+#index-link:hover {
+    font-size: 20px;
+    color: rgb(121, 214, 15);
+}
+
+#index-link:visted {
+    color: white;
 }
 
 @media screen and (min-width: 850px) {
