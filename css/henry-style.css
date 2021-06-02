@@ -1,3 +1,5 @@
+/* Set all elements to 0 margin, helps align filter to
+fill up any blank margin spaces on the page */
 * {
     margin: 0;
 }
@@ -41,6 +43,11 @@ body {
     background-color: white;
 }
 
+/* Filter takes up entire space of html page, but having
+its z index -1 puts it behind all elements. This makes
+it appear as it is part of the background, and with 
+a slight transparency in the rgba() argument, will
+blend the color for a filtered effect */
 #filter {
     background-color: rgba(102, 80, 184, 0.945);
     position: fixed;
@@ -88,6 +95,10 @@ span {
     color: white;
 }
 
+/* Dynmaic resizing of the font size for the name
+title, once the window width reaches 850 pixels,
+the font will lock at 60px, to prevent the font
+size expanding too large. */
 @media screen and (min-width: 850px) {
     #name-text {
         font-size: 60px;
