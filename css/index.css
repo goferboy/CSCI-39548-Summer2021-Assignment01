@@ -1,3 +1,8 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: rgb(72, 33, 126);
+}
+
 #logo {
     width: 500px;
 }
