@@ -2,7 +2,35 @@ body {
     background-color: white;
     font-family: 'Lato', sans-serif;
     color: rgb(72, 33, 126);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
+
+#header {
+    text-align: center;
+}
+
+#logo {
+    width: 450px;
+}
+
+#assignment {
+    max-width: 600px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#list-requirements {
+    align-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+.requirement-item p {
+    margin: 0;
+}
+
 
 .member-box {
     width: 100%;
@@ -85,8 +113,4 @@ body {
     background-color: rgb(72, 33, 126);
     border: 1px solid rgb(72, 33, 126);
     color: white;
-}
-
-#logo {
-    width: 500px;
 }
