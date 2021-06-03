@@ -12,6 +12,12 @@ hr {
     border: 1px solid rgb(206, 206, 206);
 }
 
+
+/* *****************************
+*** Style for Header Section ***
+**  and elements inside of it **
+***************************** */
+
 #header {
     text-align: center;
 }
@@ -19,6 +25,11 @@ hr {
 #logo {
     width: 450px;
 }
+
+/* *********************************
+*** Style for Assignment Section ***
+****  and elements inside of it ****
+********************************* */
 
 #assignment {
     max-width: 600px;
@@ -36,6 +47,11 @@ hr {
     margin: 0;
 }
 
+/* **********************************
+*** Style for Member List Section ***
+****  and elements inside of it *****
+********************************** */
+
 #member-list {
     width: 100%;
     display: flex;
@@ -43,7 +59,11 @@ hr {
     align-items: center;
 }
 
-.member-box {
+/* ***************************
+*** Style For Member Cards ***
+*************************** */
+
+.member-card {
     width: 100%;
     max-width: 300px;
     border: 2px solid rgb(211, 211, 211);
@@ -59,6 +79,10 @@ hr {
 .member-box:hover {
     border: 2px solid rgb(72, 33, 126);
 }
+
+/* *********************************
+*** Style For Member Info & Icon ***
+********************************* */
 
 .member-info {
     width: 100%;
@@ -78,6 +102,11 @@ hr {
     height: 40px;
     border-radius: 50%;
 }
+
+/* ******************************
+*** Style for Github Elements ***
+****************************** */
+
 
 .github-info {
     display: flex;
@@ -106,6 +135,10 @@ hr {
 .github-link:visited {
     color: rgb(72, 33, 126);
 }
+
+/* **************************
+*** Style For Button Link ***
+************************** */
 
 .member-button {
     max-width: 100%;
