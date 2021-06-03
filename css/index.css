@@ -11,8 +11,9 @@ body {
     border-radius: 15px;
     display: flex;
     flex-flow: column wrap;
-    padding: 1px 20px 20px 20px;
+    padding: 10px 20px 20px 20px;
     transition-duration: .5s;
+    margin: 20px 10px 20px 10px;
 }
 
 .member-box:hover {
@@ -22,8 +23,13 @@ body {
 .member-info {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin: 10px;
+}
+
+.member-name {
+    margin: 0;
 }
 
 .member-image {
