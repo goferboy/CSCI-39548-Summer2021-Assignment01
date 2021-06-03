@@ -25,16 +25,22 @@ body {
     align-items: center;
 }
 
+/* Image slides up and fades in from being invisible
+to opaque in in 1 second. */
 #henry-face {
-    animation: fadeIn ease-in 1s;
+    animation: slideUpAndFade ease-in 1s;
+    position: relative;
     height: 300px;
     margin: 15px;
 }
 
+/* Fade in doesnt begin till 1s second after loading, as
+it waits until profile picture is loaded. Starts off
+invisibile first and fill-mode foward keeps it opaque */
 #name-text {
     opacity: 0;
     animation: fadeIn ease-in 1s;
-    animation-delay: 1.3s;
+    animation-delay: 1.0s;
     animation-fill-mode: forwards;
     font-size: 7vw;
     margin: 5px;
@@ -61,10 +67,14 @@ blend the color for a filtered effect */
     z-index: -1;
 }
 
+/* Fade in doesnt begin till 1.2s second after loading, loads
+after name is fading in but starts before it finishes.
+Starts off invisibile first and fill-mode foward keeps 
+it opaque */
 #content {
     opacity: 0;
     animation: fadeIn ease-in 1s;
-    animation-delay: 2.0s;
+    animation-delay: 1.2s;
     animation-fill-mode: forwards;
     width: 100%;
     height: auto;
@@ -90,10 +100,14 @@ span {
     text-align: center;
 }
 
+/* Fade in doesnt begin till 1.4s second after loading,
+loads after content is fading in but starts before it finishes.
+Starts off invisibile first and fill-mode foward keeps 
+it opaque */
 #index-link {
     opacity: 0;
     animation: fadeIn ease-in 1s;
-    animation-delay: 2.0s;
+    animation-delay: 1.4s;
     animation-fill-mode: forwards;
     font-size: 20px;
     color: white;
@@ -118,12 +132,31 @@ size expanding too large. */
     }
 }
 
+/* Slide up and fade effect for Profile image
+Smooth linear fade transition from invisiable to
+opaque, slides up quick but slows down towards
+the end */
+@keyframes slideUpAndFade {
+    0% {
+        opacity: 0%;
+        bottom: -40px;
+    }
+    350% {
+        bottom: -5px;
+    }
+    100% {
+        opacity: 100%;
+        bottom: 0;
+    }
+    
+}
+
+/* Simple linear fade in effect */
 @keyframes fadeIn {
     0% {
         opacity: 0%;
     }
     100% {
         opacity: 100%;
-    }
-    
+    }  
 }
