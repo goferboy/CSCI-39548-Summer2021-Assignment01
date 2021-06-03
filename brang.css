@@ -5,13 +5,13 @@ body    {
     padding: 0;
     
 }
-header {
+header  {
     background-size: 100%;
     background-position: center;
     text-align: center;
 }
 
-h1 {
+h1  {
     text-align: center;
     color: rgb(44, 4, 38);
     font-size: 33px;
