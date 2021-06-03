@@ -28,7 +28,7 @@ body {
     margin: 10px;
 }
 
-.member-name {
+.name {
     margin: 0;
 }
 
@@ -38,7 +38,36 @@ body {
     border-radius: 50%;
 }
 
+.github-info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.github-image {
+    width: 15px;
+    height: 15px;
+}
+
+.github-link {
+    font-size: 14px;
+    color: rgb(72, 33, 126);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.github-link:hover {
+    text-decoration: underline;
+}
+
+.github-link:visited {
+    color: rgb(72, 33, 126);
+}
+
 .member-button {
+    max-width: 50%;
     background-color: white;
     font-family: 'Lato', sans-serif;
     font-size: 18px;
