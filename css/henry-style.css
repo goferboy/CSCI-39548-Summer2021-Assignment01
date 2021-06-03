@@ -1,0 +1,106 @@
+/* Set all elements to 0 margin, helps align filter to
+fill up any blank margin spaces on the page */
+* {
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url("../img/background-top-2.png");
+    font-family: 'Sen', sans-serif;
+    text-shadow: 1px 1px black;
+}
+
+#header {
+    background-color: rgba(184, 211, 84, 0.945);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#henry-face {
+    height: 300px;
+    margin: 15px;
+}
+
+#name-text {
+    font-size: 7vw;
+    margin: 5px;
+    padding-bottom: 10px;
+    color:rgb(102, 80, 184);
+}
+
+.line {
+    width: 100%;
+    height: 10px;
+    background-color: white;
+}
+
+/* Filter takes up entire space of html page, but having
+its z index -1 puts it behind all elements. This makes
+it appear as it is part of the background, and with 
+a slight transparency in the rgba() argument, will
+blend the color for a filtered effect */
+#filter {
+    background-color: rgba(102, 80, 184, 0.945);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#content {
+    width: 100%;
+    height: auto;
+    color: white;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+}
+
+#favs {
+    margin: 15px;
+    list-style-image: url("../img/banana.gif");
+}
+
+span {
+    color: rgb(121, 214, 15);
+}
+
+#footer {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#index-link {
+    font-size: 20px;
+    color: white;
+}
+
+#index-link:hover {
+    font-size: 20px;
+    color: rgb(121, 214, 15);
+}
+
+#index-link:visted {
+    color: white;
+}
+
+/* Dynmaic resizing of the font size for the name
+title, once the window width reaches 850 pixels,
+the font will lock at 60px, to prevent the font
+size expanding too large. */
+@media screen and (min-width: 850px) {
+    #name-text {
+        font-size: 60px;
+    }
+}
