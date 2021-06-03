@@ -26,11 +26,16 @@ body {
 }
 
 #henry-face {
+    animation: fadeIn ease-in 1s;
     height: 300px;
     margin: 15px;
 }
 
 #name-text {
+    opacity: 0;
+    animation: fadeIn ease-in 1s;
+    animation-delay: 1.3s;
+    animation-fill-mode: forwards;
     font-size: 7vw;
     margin: 5px;
     padding-bottom: 10px;
@@ -57,6 +62,10 @@ blend the color for a filtered effect */
 }
 
 #content {
+    opacity: 0;
+    animation: fadeIn ease-in 1s;
+    animation-delay: 2.0s;
+    animation-fill-mode: forwards;
     width: 100%;
     height: auto;
     color: white;
@@ -82,17 +91,21 @@ span {
 }
 
 #index-link {
+    opacity: 0;
+    animation: fadeIn ease-in 1s;
+    animation-delay: 2.0s;
+    animation-fill-mode: forwards;
     font-size: 20px;
+    color: white;
+}
+
+
+#index-link:visited {
     color: white;
 }
 
 #index-link:hover {
-    font-size: 20px;
     color: rgb(121, 214, 15);
-}
-
-#index-link:visted {
-    color: white;
 }
 
 /* Dynmaic resizing of the font size for the name
@@ -103,4 +116,14 @@ size expanding too large. */
     #name-text {
         font-size: 60px;
     }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+    
 }
