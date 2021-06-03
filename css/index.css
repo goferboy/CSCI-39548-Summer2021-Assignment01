@@ -1,12 +1,38 @@
 body {
+    background-color: white;
     font-family: 'Lato', sans-serif;
     color: rgb(72, 33, 126);
+}
+
+.member-box {
+    width: 100%;
+    max-width: 350px;
+    border: 2px solid rgb(158, 158, 158);
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .member-image {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+
+.member-button {
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: rgb(72, 33, 126);
+    border-radius: 25px;
+    padding: 10px 25px 10px 25px;
+    transition-duration: .5s;
+    border: 1px solid rgb(72, 33, 126)
+}
+
+.member-button:hover {
+    background-color: rgb(72, 33, 126);
+    color: white;
 }
 
 #logo {
