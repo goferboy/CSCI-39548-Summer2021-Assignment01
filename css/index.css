@@ -88,7 +88,6 @@ hr {
     flex-flow: column nowrap;
     align-items: center;
     padding: 10px 20px 20px 20px;
-    transition-duration: .5s;
     margin: 20px 10px 20px 10px;
 }
 
@@ -170,7 +169,6 @@ hr {
     color: rgb(72, 33, 126);
     border-radius: 30px;
     padding: 1.25vw 3.5vw 1.25vw 3.5vw;
-    transition-duration: .5s;
     border: 1px solid rgb(211, 211, 211);
     margin: 15px 0px 0px 0px;
 }
