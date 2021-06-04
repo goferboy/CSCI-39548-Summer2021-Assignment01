@@ -23,6 +23,7 @@ body {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    padding-top: 10px;
 }
 
 /* Image slides up and fades in from being invisible
@@ -30,7 +31,8 @@ to opaque in in 1 second. */
 #henry-face {
     animation: slideUpAndFade ease-in 1s;
     position: relative;
-    height: 300px;
+    width: 42vw;
+    max-width: 286px;
     margin: 15px;
 }
 
@@ -42,7 +44,7 @@ invisibile first and fill-mode foward keeps it opaque */
     animation: fadeIn ease-in 1s;
     animation-delay: 1.0s;
     animation-fill-mode: forwards;
-    font-size: 7vw;
+    font-size: 9.5vw;
     margin: 5px;
     padding-bottom: 10px;
     color:rgb(102, 80, 184);
@@ -79,14 +81,22 @@ it opaque */
     width: 100%;
     height: auto;
     color: white;
-    font-size: 28px;
+    font-size: 5.3vw;
     display: flex;
     justify-content: center;
 }
 
 #favs {
     margin: 15px;
-    list-style-image: url("../img/banana.gif");
+    list-style-type: none;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.banana-list {
+    width: 3.7vw;
+    max-width: 26px;
+    margin: 0 2vw 0 1vw;
 }
 
 span {
@@ -109,7 +119,7 @@ it opaque */
     animation: fadeIn ease-in 1s;
     animation-delay: 1.4s;
     animation-fill-mode: forwards;
-    font-size: 20px;
+    font-size: 4vw;
     color: white;
 }
 
@@ -122,13 +132,18 @@ it opaque */
     color: rgb(121, 214, 15);
 }
 
-/* Dynmaic resizing of the font size for the name
-title, once the window width reaches 850 pixels,
-the font will lock at 60px, to prevent the font
-size expanding too large. */
-@media screen and (min-width: 850px) {
+/* Dynmaic resizing of the font sizes based on browser
+window size, used to be adapative for smartphone screens
+while not becoming too large for desktops */
+@media screen and (min-width: 650px) {
     #name-text {
-        font-size: 60px;
+        font-size: 65px;
+    }
+    #content {
+        font-size: 36px;
+    }
+    .banana-list {
+        margin: 0 13.6px 0 6.8px;
     }
 }
 

@@ -13,6 +13,7 @@ body {
 ***************************** */
 
 #header {
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -180,7 +181,9 @@ hr {
     color: white;
 }
 
-/* Dynmaic resizing of the font size */
+/* Dynmaic resizing of the font sizes based on browser
+window size, used to be adapative for smartphone screens
+while not becoming too large for desktops */
 @media screen and (min-width: 680px) {
     #session {
         font-size: 44px;
