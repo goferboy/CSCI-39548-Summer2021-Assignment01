@@ -103,6 +103,11 @@ span {
     color: rgb(121, 214, 15);
 }
 
+
+/* Fade in doesnt begin till 1.4s second after loading,
+loads after content is fading in but starts before it finishes.
+Starts off invisibile first and fill-mode foward keeps 
+it opaque */
 #footer {
     opacity: 0%;
     animation: fadeIn ease-in 1s;
@@ -117,11 +122,6 @@ span {
     align-items: center;
 }
 
-/* Fade in doesnt begin till 1.4s second after loading,
-loads after content is fading in but starts before it finishes.
-Starts off invisibile first and fill-mode foward keeps 
-it opaque */
-
 .link-button {
     width: 50vw;
     max-width:  290.4px;
@@ -133,6 +133,7 @@ it opaque */
     padding: 1.25vw 3.5vw 1.25vw 3.5vw;
     border: 1px solid rgb(72, 33, 126);
     margin: 15px 0px 0px 0px;
+    transition: ease-out 0.2s;
 }
 
 .link-button:hover {

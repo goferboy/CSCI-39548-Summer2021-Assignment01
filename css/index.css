@@ -89,6 +89,7 @@ hr {
     align-items: center;
     padding: 10px 20px 20px 20px;
     margin: 20px 10px 20px 10px;
+    transition: border linear 0.3s;
 }
 
 .member-card:hover {
@@ -171,6 +172,7 @@ hr {
     padding: 1.25vw 3.5vw 1.25vw 3.5vw;
     border: 1px solid rgb(211, 211, 211);
     margin: 15px 0px 0px 0px;
+    transition: ease-out 0.3s;
 }
 
 .member-button:hover {
