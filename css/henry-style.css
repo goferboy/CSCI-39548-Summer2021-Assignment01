@@ -104,6 +104,10 @@ span {
 }
 
 #footer {
+    opacity: 0%;
+    animation: fadeIn ease-in 1s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
     margin-top: 30px;
     width: 100%;
     height: auto;
@@ -116,10 +120,6 @@ Starts off invisibile first and fill-mode foward keeps
 it opaque */
 
 #return-button {
-    opacity: 0;
-    animation: fadeIn ease-in 1s;
-    animation-delay: 1.4s;
-    animation-fill-mode: forwards;
     max-width: 100%;
     background-color: rgb(184, 211, 84);
     font-family: 'Sen', sans-serif;
