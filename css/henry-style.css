@@ -114,22 +114,27 @@ span {
 loads after content is fading in but starts before it finishes.
 Starts off invisibile first and fill-mode foward keeps 
 it opaque */
-#index-link {
+
+#return-button {
     opacity: 0;
     animation: fadeIn ease-in 1s;
     animation-delay: 1.4s;
     animation-fill-mode: forwards;
-    font-size: 4vw;
-    color: white;
+    max-width: 100%;
+    background-color: rgb(184, 211, 84);
+    font-family: 'Sen', sans-serif;
+    font-size: 3.5vw;
+    color: rgb(72, 33, 126);
+    border-radius: 30px;
+    padding: 1.25vw 3.5vw 1.25vw 3.5vw;
+    transition-duration: .5s;
+    border: 1px solid rgb(72, 33, 126);
+    margin: 15px 0px 0px 0px;
 }
 
-
-#index-link:visited {
-    color: white;
-}
-
-#index-link:hover {
-    color: rgb(121, 214, 15);
+#return-button:hover {
+    background-color: rgb(72, 33, 126);
+    color: rgb(184, 211, 84);
 }
 
 /* Dynmaic resizing of the font sizes based on browser
@@ -144,6 +149,10 @@ while not becoming too large for desktops */
     }
     .banana-list {
         margin: 0 13.6px 0 6.8px;
+    }
+    #return-button {
+        font-size: 24px;
+        padding: 8.5px 23.8px 8.5px 23.8px;
     }
 }
 
@@ -163,7 +172,6 @@ the end */
         opacity: 100%;
         bottom: 0;
     }
-    
 }
 
 /* Simple linear fade in effect */
