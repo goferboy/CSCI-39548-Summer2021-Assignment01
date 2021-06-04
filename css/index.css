@@ -108,6 +108,10 @@ hr {
     margin: 10px;
 }
 
+.member-name {
+    margin-left: 4vw;
+}
+
 .name {
     font-size: 5vw;
     margin: 0;
@@ -117,6 +121,7 @@ hr {
     width: 22vw;
     max-width: 150px;
     border-radius: 50%;
+    margin-right: 4vw;
 }
 
 /* ******************************
@@ -160,10 +165,10 @@ hr {
     max-width: 100%;
     background-color: white;
     font-family: 'Lato', sans-serif;
-    font-size: 18px;
+    font-size: 3.2vw;
     color: rgb(72, 33, 126);
-    border-radius: 25px;
-    padding: 10px 25px 10px 25px;
+    border-radius: 30px;
+    padding: 1.25vw 3.5vw 1.25vw 3.5vw;
     transition-duration: .5s;
     border: 1px solid rgb(211, 211, 211);
     margin: 15px 0px 0px 0px;
@@ -191,5 +196,15 @@ hr {
     }
     .github-link {
         font-size: 21px;
+    }
+    .member-name {
+        margin-left: 28px;
+    }
+    .member-image {
+        margin-right: 28px;
+    }
+    .member-button {
+        font-size: 24px;
+        padding: 10px 29px 10px 29px;
     }
 }
