@@ -31,8 +31,8 @@ to opaque in in 1 second. */
 #henry-face {
     animation: slideUpAndFade ease-in 1s;
     position: relative;
-    width: 42vw;
-    max-width: 286px;
+    width: 50vw;
+    max-width: 340px;
     margin: 15px;
 }
 
@@ -63,7 +63,7 @@ a slight transparency in the rgba() argument, will
 blend the color for a filtered effect */
 #filter {
     background-color: rgba(102, 80, 184, 0.945);
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     z-index: -1;
