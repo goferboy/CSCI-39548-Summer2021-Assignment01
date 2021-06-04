@@ -23,6 +23,7 @@ body {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    padding-top: 10px;
 }
 
 /* Image slides up and fades in from being invisible
@@ -30,7 +31,8 @@ to opaque in in 1 second. */
 #henry-face {
     animation: slideUpAndFade ease-in 1s;
     position: relative;
-    height: 300px;
+    width: 50vw;
+    max-width: 340px;
     margin: 15px;
 }
 
@@ -42,7 +44,7 @@ invisibile first and fill-mode foward keeps it opaque */
     animation: fadeIn ease-in 1s;
     animation-delay: 1.0s;
     animation-fill-mode: forwards;
-    font-size: 7vw;
+    font-size: 9.5vw;
     margin: 5px;
     padding-bottom: 10px;
     color:rgb(102, 80, 184);
@@ -79,14 +81,22 @@ it opaque */
     width: 100%;
     height: auto;
     color: white;
-    font-size: 28px;
+    font-size: 5.3vw;
     display: flex;
     justify-content: center;
 }
 
 #favs {
     margin: 15px;
-    list-style-image: url("../img/banana.gif");
+    list-style-type: none;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.banana-list {
+    width: 3.7vw;
+    max-width: 26px;
+    margin: 0 2vw 0 1vw;
 }
 
 span {
@@ -94,41 +104,58 @@ span {
 }
 
 #footer {
+    opacity: 0%;
+    animation: fadeIn ease-in 1s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
     margin-top: 30px;
     width: 100%;
     height: auto;
-    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Fade in doesnt begin till 1.4s second after loading,
 loads after content is fading in but starts before it finishes.
 Starts off invisibile first and fill-mode foward keeps 
 it opaque */
-#index-link {
-    opacity: 0;
-    animation: fadeIn ease-in 1s;
-    animation-delay: 1.4s;
-    animation-fill-mode: forwards;
-    font-size: 20px;
-    color: white;
+
+.link-button {
+    width: 50vw;
+    max-width:  290.4px;
+    background-color: rgb(184, 211, 84);
+    font-family: 'Sen', sans-serif;
+    font-size: 3.5vw;
+    color: rgb(72, 33, 126);
+    border-radius: 30px;
+    padding: 1.25vw 3.5vw 1.25vw 3.5vw;
+    border: 1px solid rgb(72, 33, 126);
+    margin: 15px 0px 0px 0px;
 }
 
-
-#index-link:visited {
-    color: white;
+.link-button:hover {
+    background-color: rgb(72, 33, 126);
+    color: rgb(184, 211, 84);
 }
 
-#index-link:hover {
-    color: rgb(121, 214, 15);
-}
-
-/* Dynmaic resizing of the font size for the name
-title, once the window width reaches 850 pixels,
-the font will lock at 60px, to prevent the font
-size expanding too large. */
-@media screen and (min-width: 850px) {
+/* Dynmaic resizing of the font sizes based on browser
+window size, used to be adapative for smartphone screens
+while not becoming too large for desktops */
+@media screen and (min-width: 650px) {
     #name-text {
-        font-size: 60px;
+        font-size: 65px;
+    }
+    #content {
+        font-size: 36px;
+    }
+    .banana-list {
+        margin: 0 13.6px 0 6.8px;
+    }
+    .link-button {
+        font-size: 24px;
+        padding: 8.5px 23.8px 8.5px 23.8px;
     }
 }
 
@@ -148,7 +175,6 @@ the end */
         opacity: 100%;
         bottom: 0;
     }
-    
 }
 
 /* Simple linear fade in effect */
