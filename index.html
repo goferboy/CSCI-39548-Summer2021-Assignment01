@@ -4,24 +4,73 @@
         <meta charset="utf-8">
         <title>CSCI 39548 Summer 2021 - Assignment 1 - Group 1</title>
         <link rel="stylesheet" href="css/index.css">
+
+        <!-- Google Fonts Import -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-- font-family: Lato -->
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <img id="logo" src="img/hunter-logo.png" alt="Hunter College Logo">
-        <h1>CSCI-39584-01 Summer 2021</h1>
-        <hr>
-        <h1>Assignment 1</h1>
-        <p>Your group should create a small website using HTML and CSS. 
-            There should be a homepage that has links to the other pages on the site. 
-            Each group member should create a page with the following information:</p>
-        <ul>
-            <li><p>Name</p></li>
-            <li><p>Favorite color, animal, and number</p></li>
-            <li><p>At least one image</li>
-        </ul>
-        <hr>
-        <ul>
-            <li><a href="henry.html">Henry Baum's Page</a></li>
-            <li><a href="">Brang Mai's Page'</a></li>
-        </ul>
+        
+        <!-- Header Section: Displays Hunter Logo and Class Session -->
+        <div id="header">
+            <img id="logo" src="img/hunter-logo.png" alt="Hunter College Logo">
+            <h1>CSCI-39584-01 Summer 2021</h1>
+        </div>
+        
+        <!-- Assignment Section: Gives Details of assignment -->
+        <div id="assignment">
+            <hr>
+            <h2>Assignment 1</h2>
+            <p>Your group should create a small website using HTML and CSS. 
+                There should be a homepage that has links to the other pages on the site. 
+                Each group member should create a page with the following information:</p>
+            <ul id="list-requirements">
+                <li class="requirement-item"><p>Name</p></li>
+                <li class="requirement-item"><p>Favorite color, animal, and number</p></li>
+                <li class="requirement-item"><p>At least one image</li>
+            </ul>
+            <hr>
+        </div>
+
+        <!-- Member List Section: Each member of the group has a card that displays:
+                - Their name
+                - Their photo icon
+                - Link to their respective github
+                - Link to their section of the assignment
+        -->
+        <div id="member-list">
+
+            <!-- Henry Baum's Card -->
+            <div class="member-card">
+                <div class="member-info">
+                    <div class="member-name">
+                        <h2 class="name">Henry Baum</h2>
+                        <div class="github-info">
+                            <img class="github-image" src="img/github.png">
+                            <a class="github-link" href="https://github.com/goferboy">goferboy</a>
+                        </div>
+                    </div>
+                    <img class="member-image" src="img/goferboy.jpg">
+                </div>
+                <button class="member-button" onclick="window.location.href='henry.html';">Henry's Page</button>
+            </div>
+
+            <!-- Brang Mai's Card -->
+            <div class="member-card">
+                <div class="member-info">
+                    <div class="member-name">
+                        <h2 class="name">Brang Mai</h2>
+                        <div class="github-info">
+                            <img class="github-image" src="img/github.png">
+                            <a class="github-link" href="https://github.com/brangmai1">brangmai1</a>
+                        </div>
+                    </div>
+                    <img class="member-image" src="img/brangmai1.jpg">
+                </div>
+                <button class="member-button" onclick="window.location.href='';">Brang's Page</button>
+            </div>
+        
+        </div> <!-- end of member-list containter -->
     </body>
 </html>

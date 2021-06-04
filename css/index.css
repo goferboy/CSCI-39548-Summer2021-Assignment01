@@ -1,3 +1,160 @@
+body {
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    color: rgb(72, 33, 126);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+hr {
+    width: 174px;
+    border: 1px solid rgb(206, 206, 206);
+}
+
+
+/* *****************************
+*** Style for Header Section ***
+**  and elements inside of it **
+***************************** */
+
+#header {
+    text-align: center;
+}
+
 #logo {
-    width: 500px;
+    width: 450px;
+}
+
+/* *********************************
+*** Style for Assignment Section ***
+****  and elements inside of it ****
+********************************* */
+
+#assignment {
+    max-width: 600px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#list-requirements {
+    align-self: center;
+    margin: 0 0 19.2px 0;
+    padding: 0;
+}
+
+.requirement-item p {
+    margin: 0;
+}
+
+/* **********************************
+*** Style for Member List Section ***
+****  and elements inside of it *****
+********************************** */
+
+#member-list {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+/* ***************************
+*** Style For Member Cards ***
+*************************** */
+
+.member-card {
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid rgb(211, 211, 211);
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 10px 20px 20px 20px;
+    transition-duration: .5s;
+    margin: 20px 10px 20px 10px;
+}
+
+.member-card:hover {
+    border: 2px solid rgb(72, 33, 126);
+}
+
+/* *********************************
+*** Style For Member Info & Icon ***
+********************************* */
+
+.member-info {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.name {
+    margin: 0;
+}
+
+.member-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* ******************************
+*** Style for Github Elements ***
+****************************** */
+
+
+.github-info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.github-image {
+    width: 15px;
+    height: 15px;
+}
+
+.github-link {
+    font-size: 14px;
+    color: rgb(72, 33, 126);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.github-link:hover {
+    text-decoration: underline;
+}
+
+.github-link:visited {
+    color: rgb(72, 33, 126);
+}
+
+/* **************************
+*** Style For Button Link ***
+************************** */
+
+.member-button {
+    max-width: 100%;
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: rgb(72, 33, 126);
+    border-radius: 25px;
+    padding: 10px 25px 10px 25px;
+    transition-duration: .5s;
+    border: 1px solid rgb(211, 211, 211);
+    margin: 15px 0px 0px 0px;
+}
+
+.member-button:hover {
+    background-color: rgb(72, 33, 126);
+    border: 1px solid rgb(72, 33, 126);
+    color: white;
 }
