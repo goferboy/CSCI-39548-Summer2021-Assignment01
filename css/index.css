@@ -79,8 +79,8 @@ hr {
 *************************** */
 
 .member-card {
-    width: 100%;
-    max-width: 300px;
+    width: 80vw;
+    max-width: 600px;
     border: 2px solid rgb(211, 211, 211);
     border-radius: 15px;
     display: flex;
@@ -109,12 +109,13 @@ hr {
 }
 
 .name {
+    font-size: 5vw;
     margin: 0;
 }
 
 .member-image {
-    width: 40px;
-    height: 40px;
+    width: 22vw;
+    max-width: 150px;
     border-radius: 50%;
 }
 
@@ -131,12 +132,12 @@ hr {
 }
 
 .github-image {
-    width: 15px;
-    height: 15px;
+    width: 3vw;
+    max-width: 24px;
 }
 
 .github-link {
-    font-size: 14px;
+    font-size: 3vw;
     color: rgb(72, 33, 126);
     text-decoration: none;
     margin: 0;
@@ -183,6 +184,12 @@ hr {
         font-size: 34px;
     }
     #assignment-details, .requirement-item p {
+        font-size: 21px;
+    }
+    .name {
+        font-size: 40px; 
+    }
+    .github-link {
         font-size: 21px;
     }
 }
